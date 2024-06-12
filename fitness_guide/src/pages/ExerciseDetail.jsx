@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
 import { exerciseOptions, fetchData, YoutubeOptions } from '../utils/FetchData';
 import Detail from '../components/Detail';
 import SimilarExercises from '../components/SimilarExercises';
 import ExerciseVideos from '../components/ExerciseVideos';
+// import { UserContextData } from '../App'
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
+  //  const {exerciseDetail, setExerciseDetail, exerciseVideos, setExerciseVideos}=useContext(UserContextData);
   const { id } = useParams();
 
   useEffect(() => {

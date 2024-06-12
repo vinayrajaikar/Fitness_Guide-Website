@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext }  from 'react'
 import { Stack,Typography, stackClasses } from '@mui/material'
 import Icon from '../assets/icons/gym.png';
+import { UserContextData } from '../App'
 
+const BodyPart = ({item}) => {
 
-const BodyPart = ({item,setBodyPart,bodyPart}) => {
+  const {setBodyPart,bodyPart}=useContext(UserContextData);
   return (
     <Stack type="button" alignItems="center" justifyContent="center" className='bodyPart-card'
             sx={{
