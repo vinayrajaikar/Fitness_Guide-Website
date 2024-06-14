@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus{
+    outline: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#cnclIcn{
+    width: 20px;
+    height: 20px;
+}
+#topContainer{
+    display: flex;
+    justify-content: end;
+    padding: 5%;
+}
+#bottomContainer{
+    display: block;
+    padding: 0% 5%;
+}
+#ageContainer, #heightContainer, #weightContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 0% 5%;
+    margin: 3% 0%;
+}
+#preferContainer{
+    display: flex;
+    padding: 1%;
+    margin: 5% 0%;
+}
+#preferContainer div{
+    width: 50%;
+}
+
+#ageVal,#heightVal,#weightVal{
+    border: none;
+    width: 100%;
+}
+input[type='radio'] {
+    accent-color: #ff0000;
+}
+
+
+
+.getDiet {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #f54040;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 120%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.getDiet:disabled {
+  cursor: default;
+}
+
+#loadingCont{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    display: block;
+}
+#dietCont{
+    display: none;
+}
+
+#text{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.sobo{
+    background-color: #fdbaba7b;
+    border-radius: 1em;
+    padding: 5%;
+    color: rgb(51, 51, 51);
+    margin: 0% 1%;
+    width: 25%;
+}
+.sobo div p, .sobo div h3{
+    margin: 5% 0%;
+}
+.sobo img{
+    width: 25px;
+    height: 25px;
+}
+#statContainer{
+    display: flex;
+    padding: 3% 0%;
+}
+
+#mealContainer h4{
+    margin: 1%
+}
+#bmiCont{
+    background-color: #bafdc57b;
+}
+#calCont{
+    background-color: #c5bafd7b;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+  }
+  
+  .row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 3%;
+    padding: 5%;
+    background-color: #f5404031;
+    border-radius: 1em;
+  }
+  .r1{
+    background-color: #bafdc57b;
+    }
+    .r2{
+        background-color: #c5bafd7b;
+    }
+
+  
+  .box {
+    border-radius: 5px;
+    padding: 2%;
+  }
+
+  .a , .b, .c, .d{
+    display: none;
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+    #cnclIcn{
+        width: 25px;
+        height: 25px;
+    }
+    #topContainer{
+        padding: 2% 5%;
+    }
+    #bottomContainer{
+        display: flex;
+    }
+    #leftContainer{
+        width: 30%;
+    }
+    #rightContainer{
+        width: 70%;
+    }
+    #text{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    #dietIcn{
+        width: 125px;
+    }
+    #loadingCont{
+        padding-top: 20%;
+    }
+    .sobo{
+        border-radius: 1em;
+        padding: 2%;
+        margin: 0% 1%;
+        width: 15%;
+    }
+    #dietCont{
+        padding: 0% 5%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+      }
+      
+      .row {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
+        background-color: #f5404000;
+      }
+    
+      
+      .box {
+        border-radius: 5px;
+        padding: 20px;
+      }
+    
+      .a , .b, .c, .d{
+        display: block;
+        color: rgba(51, 51, 51, 0.697);
+      }
+  }
