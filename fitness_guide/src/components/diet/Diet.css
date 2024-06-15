@@ -7,21 +7,16 @@ input::-webkit-inner-spin-button {
 input:focus{
     outline: none;
 }
+input{
+    background-color: rgba(255, 255, 255, 0);
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
-#cnclIcn{
-    width: 20px;
-    height: 20px;
-}
-#topContainer{
-    display: flex;
-    justify-content: end;
-    padding: 5%;
-}
+
 #bottomContainer{
     display: block;
-    padding: 0% 5%;
+    padding: 5%;
 }
 #ageContainer, #heightContainer, #weightContainer{
     display: flex;
@@ -29,7 +24,7 @@ body{
     margin-right: 5%;
     border: 1px solid black;
     border-radius: 0.5em;
-    padding: 0% 5%;
+    padding: 4% 5%;
     margin: 3% 0%;
 }
 #preferContainer{
@@ -91,12 +86,15 @@ input[type='radio'] {
     padding-top: 15%;
     display: block;
 }
-#dietCont{
-    display: none;
-}
+
 
 #text{
     font-size: 1.4em;
+    font-weight: bold;
+}
+#textt{
+    margin: 1%;
+    font-size: 120%;
     font-weight: bold;
 }
 .sobo{
@@ -129,6 +127,11 @@ input[type='radio'] {
     background-color: #c5bafd7b;
 }
 
+#dietp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .wrapper {
     display: grid;
@@ -196,7 +199,7 @@ input[type='radio'] {
         margin: 0% 1%;
         width: 15%;
     }
-    #dietCont{
+    #dietDataContainer{
         padding: 0% 5%;
     }
     .wrapper {

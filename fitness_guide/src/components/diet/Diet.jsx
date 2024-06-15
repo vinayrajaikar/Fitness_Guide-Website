@@ -9,6 +9,7 @@ function App() {
   const [dietType, setDietType] = useState("Vegetarian");
   const [loading, setLoading] = useState(false);
   const [dietData, setDietData] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleAgeChange = (e) => {
     setAge(e.target.value);
@@ -26,13 +27,36 @@ function App() {
     setDietType(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isValidInput()) {
+      setErrorMessage("");
+      handleGetDiet();
+    } else {
+      setErrorMessage("Please enter realistic values");
+      setLoading(false);
+    }
+  };
+
+  const isValidInput = () => {
+    const bmi = weight / ((height / 100) ** 2);
+    return (
+      height >= 120 && height <= 250 &&
+      weight >= 30 && weight <= 200 &&
+      bmi >= 12 && bmi <= 60 &&
+      age >= 15 && age <= 90
+    );
+  };
+
   const handleGetDiet = async () => {
     setLoading(true);
     try {
       const response = await fetchDietPlan(age, height, weight, dietType);
       setDietData(response);
+      setErrorMessage("");
     } catch (error) {
       console.error("Error fetching diet plan:", error);
+      setErrorMessage("Error fetching diet plan, try again");
     } finally {
       setLoading(false);
     }
@@ -111,13 +135,6 @@ function App() {
 
   return (
     <div id="mainContainer">
-      <div id="topContainer">
-        <img
-          id="cnclIcn"
-          src="https://cdn-icons-png.flaticon.com/128/748/748122.png"
-          alt=""
-        />
-      </div>
       <div id="bottomContainer">
         <div id="leftContainer">
           <p id="text">Before we start, we'd like to get to know you better.</p>
@@ -134,7 +151,7 @@ function App() {
             <p>yrs</p>
           </div>
           <div id="heightContainer">
-            <input 
+            <input
               className="band"
               type="number"
               name="height"
@@ -181,15 +198,28 @@ function App() {
               <label htmlFor="nonVeg">Non-Vegetarian</label>
             </div>
           </div>
-          <button className="getDiet" onClick={handleGetDiet}>
+          <button className="getDiet" onClick={handleSubmit}>
             Get Diet Plan
           </button>
         </div>
-        {loading ? (
-          <p>Loading...</p>
-        ) : dietData ? (
-          populateValues()
-        ) : null}
+        <div id="rightContainer">
+          {(!dietData || loading || errorMessage) && (
+            <div id="loadingCont">
+              <p id="dietp">
+                <img
+                  id="dietIcn"
+                  src="https://cdn-icons-png.flaticon.com/128/872/872391.png"
+                  alt="Loading Icon"
+                  width="75px"
+                />
+              </p>
+              <h3 id="textt">
+                {loading ? "Loading..." : errorMessage ? errorMessage : "AI Diet Plan"}
+              </h3>
+            </div>
+          )}
+          {!loading && !errorMessage && dietData && populateValues()}
+        </div>
       </div>
     </div>
   );
