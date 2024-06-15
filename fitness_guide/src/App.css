@@ -56,10 +56,10 @@ body {
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
-  top: 0px;
-  width: 700px;
-  height: 900px;
+  right: 70px;
+  top: 90px;
+  /* width: 700px; */
+  height: 750px;
   margin-top: -330px;
 
 }
@@ -86,6 +86,7 @@ body {
 .bodyPart-card {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
+
 }
 
 .exercise-card:hover,
@@ -124,9 +125,21 @@ body {
     width: 500px;
   }
 
-  .left-arrow,
+  .left-arrow{
+    /* position: static !important; */
+    position: absolute;
+    top: 10px;
+    left: 40px;
+
+  }
+
   .right-arrow {
-    position: static !important;
+    /* position: static !important; */
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    /* font-siz; */
+
   }
 
   .hero-banner-img {
@@ -134,6 +147,7 @@ body {
   }
 
   .exercise-card {
+    height: 326px;
     width: 320px;
   }
 
