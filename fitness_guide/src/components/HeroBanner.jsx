@@ -21,7 +21,7 @@ const HeroBanner = () => {
       </Typography>
 
       <Stack>
-        <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: '#FF2625', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Explore Exercises</a>
+        <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '250px', textAlign: 'center', background: '#FF2625', padding: '10px', fontSize: '25px', textTransform: 'none', color: 'white', borderRadius: '50px' }}>Explore Exercises</a>
       </Stack>
 
       <Typography fontWeight={600} marginTop='90px' marginLeft='250px' color="#FF2625" sx={{ opacity: '0.1', display: { lg: 'block', xs: 'none'}, fontSize: '200px' }}>
