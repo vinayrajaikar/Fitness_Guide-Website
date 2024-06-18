@@ -13,6 +13,7 @@ const BodyPart = ({item}) => {
                 background:'#fff',
                 borderBottomLeftRadius:'20px',
                 marginTop:'30px',
+                marginLeft:'-20px',
                 width:'270px',
                 height:'280px',
                 cursor:'pointer',

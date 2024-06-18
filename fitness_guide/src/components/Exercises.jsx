@@ -40,12 +40,13 @@ useEffect(() => {
 }, [bodyPart, setExercises]);
 
   return (
-    <Box id="exercises" sx={{mt:{ lg:'110px'}}} mt="50px" p="20px" >
-        <Typography variant='h3' mb="46px">
+    <div className='exercise-main-div'>
+    <Box id="exercises" sx={{mt:{ lg:'110px'}}}  mt="50px" p="20px"  >
+        <Typography variant='h2' mb="46px" sx={{fontSize:{ xs:'40px'},marginLeft:{xs:'50px'}}}>
               Showing Result
         </Typography>
 
-        <Stack direction="row" sx={{gap:{lg:'110px',xs:'50px'}}} flexWrap="wrap" justifyContent="center" >
+        <Stack direction="row" sx={{gap:{lg:'110px',xs:'80px'}}} flexWrap="wrap" justifyContent="center" >
             {currentExercises.map((exercise,index)=>(
               <ExerciseCard key={index} exercise={exercise}/>
               // <p>{exercise.name}</p>
@@ -65,6 +66,7 @@ useEffect(() => {
             )}
         </Stack>
     </Box>
+    </div>
   )
 }
 

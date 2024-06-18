@@ -159,8 +159,13 @@ body {
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:432px) {
   .exercise-card {
     width: 280px;
+  }
+
+  .exercise-main-div{
+    height: 2750px;
+    /* background-color: #FF2625; */
   }
 }

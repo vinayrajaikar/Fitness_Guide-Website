@@ -20,7 +20,7 @@ const ExerciseVideos = ({exerciseVideos,name}) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
+            <img style={{ borderRadius: '10px' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
               <Typography sx={{ fontSize: { lg: '28px', xs: '18px' } }} fontWeight={600} color="#000">
                 {item.video.title}

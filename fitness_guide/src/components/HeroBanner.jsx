@@ -6,7 +6,7 @@ import HeroBannerImage from '../assets/images/b13.png'
 const HeroBanner = () => {
   return (
     <Box sx={{mt:{lg:'150px',xs:'70px'},
-              ml:{sm:'50px'}}} position="relative" p="20px" >
+              ml:{xs:'20px'}}} position="relative" p="20px" >
 
       <Typography color="#FF2625" fontWeight="600" fontSize="26px" >
         Fitness Club
@@ -20,7 +20,7 @@ const HeroBanner = () => {
         Check out the most effective exercises
       </Typography>
 
-      <Stack>
+      <Stack sx={{ml:{xs:'30px'}}}>
         <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '250px', textAlign: 'center', background: '#FF2625', padding: '10px', fontSize: '25px', textTransform: 'none', color: 'white', borderRadius: '50px' }}>Explore Exercises</a>
       </Stack>
 
