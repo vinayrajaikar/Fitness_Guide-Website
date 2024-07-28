@@ -42,6 +42,19 @@ const Navbar = () => {
         >
           Diet
         </Link>
+        <Link
+          to="/blog"
+          style={{
+            textDecoration: 'none',
+            color: '#3A1212',
+            borderBottom: location.pathname === '/blog' ? '3px solid #FF2625' : 'none'
+          }}
+        >
+          Blog
+        </Link>
+
+
+        
       </Stack>
     </Stack>
   );

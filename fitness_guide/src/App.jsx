@@ -4,8 +4,9 @@ import {Box} from '@mui/material';
 import Home from './pages/Home.jsx';
 import ExerciseDetail from './pages/ExerciseDetail';
 import Navbar from './components/Navbar.jsx';
-import Footer from './components/Footer.jsx';
+// import Footer from './components/Footer.jsx';
 import Diet from './components/diet/Diet.jsx';
+import Blog from './components/blog/Blog.jsx';
 import './App.css';
 
 export const UserContextData= createContext(null);
@@ -37,9 +38,10 @@ const App = () => {
             <Route path="/" element={<Home/>}/>
             <Route path="/exercise/:id" element={<ExerciseDetail/>}/>
             <Route path="/diet" element={<Diet/>}/>
+            <Route path="/blog" element={<Blog/>}/>
             {/* <Route path="/diet#exercises" element={<Home/>}/> */}
           </Routes >
-          <Footer/>
+          {/* <Footer/> */}
       </Box>
       {/* <div className="text-3xl font-bold underline">App</div> */}
     </>

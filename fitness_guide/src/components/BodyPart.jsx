@@ -17,7 +17,11 @@ const BodyPart = ({item}) => {
                 width:'270px',
                 height:'280px',
                 cursor:'pointer',
-                gap:'47px'
+                gap:'47px',
+                // borderTop: '', // No border by default
+                // '&:hover': {
+                //   borderTop: '4px solid #ff2625',
+                // },
             }}
             onClick={()=>{
                 setBodyPart(item);
