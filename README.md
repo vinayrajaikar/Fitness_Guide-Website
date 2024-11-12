@@ -1,6 +1,6 @@
 # Fitness_Guide-Website
 
-The **Fitness Guide Website** is a comprehensive web application that allows users to explore various exercises, tailored to their specific needs, and helps enhance their fitness routine.
+The **Fitness Guide Website** is a comprehensive web application that allows users to explore various exercises, tailored to their specific needs, and helps to enhance their fitness routine.
 
 ## Key Features:
 - **Search & Filter**: Sort exercises by muscle group, equipment, and exercise type.
@@ -10,7 +10,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
 
 ## Screenshots:
 - **Home Page**:
-  ![Home Page](public/HomePage.png)
+  ![Home Page](./fitness_guide/public/HomePage.png)
 
 - **Filtering**:
   ![Filtering](./public/ExcerciseFilter.png)
