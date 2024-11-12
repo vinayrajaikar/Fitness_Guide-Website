@@ -10,7 +10,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
 
 ## Screenshots:
 - **Home Page**:
-  ![Home Page](./public/HomePage.png)
+  ![Home Page](public/HomePage.png)
 
 - **Filtering**:
   ![Filtering](./public/ExcerciseFilter.png)
@@ -35,9 +35,6 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
 - **Material-UI**: For responsive and visually appealing interface components.
 - **RapidAPI**: For fetching exercise GIFs to enhance visual guidance.
 - **Gemini API**: Powers the diet section, providing tailored meal plans and dietary recommendations.
-
-## Project Overview:
-This project is a self-learning initiative, completed in approximately three months. I was responsible for the entire development process, including UI design, API integration, and optimization for a seamless user experience. The project has helped me gain valuable experience in full-stack development, API integration, and creating responsive web applications.
 
 ## How to Run:
 1. Clone this repository.
