@@ -22,7 +22,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
   ![Detailed Page](./fitness_guide/public/DetailedExercisePage.png)
 
 - **YouTube Video Recommendation**:
-  ![YouTube Video Recommendation](./.png)
+  ![YouTube Video Recommendation](./fitness_guide/public/Yt-Page.png)
 
 - **Diet Section**:
   ![Diet Section](./fitness_guide/public/DietPage.png)
