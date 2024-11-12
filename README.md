@@ -16,10 +16,10 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
   ![Filtering](./fitness_guide/public/ExcerciseFilter.png)
 
 - **Exercise Page**:
-  ![Exercise Page](./fitness_guide/public/ExcercisPage.png)
+  ![Exercise Page](./fitness_guide/public/ExercisPage.png)
 
 - **Detailed Page**:
-  ![Detailed Page](.fitness_guide/public/ExercisPage.png)
+  ![Detailed Page](./fitness_guide/public/DetailedExercisePage.png)
 
 - **YouTube Video Recommendation**:
   ![YouTube Video Recommendation](./.png)
@@ -28,7 +28,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
   ![Diet Section](./fitness_guide/public/DietPage.png)
 
 - **Blog Section**:
-  ![Blog Section](.fitness_guide/public/BlogPage.png)
+  ![Blog Section](./fitness_guide/public/BlogPage.png)
 
 ## Technologies Used:
 - **ReactJS**: Main framework for a structured, component-based UI.
