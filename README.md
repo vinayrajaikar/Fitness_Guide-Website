@@ -35,6 +35,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
 - **Material-UI**: For responsive and visually appealing interface components.
 - **RapidAPI**: For fetching exercise GIFs to enhance visual guidance.
 - **Gemini API**: Powers the diet section, providing tailored meal plans and dietary recommendations.
+- **Context Api**: Used Context Api for State Management to Avoid prop Drilling.
 
 ## How to Run:
 1. Clone this repository.
