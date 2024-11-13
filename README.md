@@ -18,7 +18,7 @@ The **Fitness Guide Website** is a comprehensive web application that allows use
 - **Exercise Page**:
   ![Exercise Page](./fitness_guide/public/ExercisPage.png)
 
-- **Detailed Page**:
+- **Detailed Exercise Page**:
   ![Detailed Page](./fitness_guide/public/DetailedExercisePage.png)
 
 - **YouTube Video Recommendation**:
